@@ -15,7 +15,9 @@ public class TriangleUtils {
     public String getTriangleType(String a, String b, String c) {
     	String type="none";
     	
-    	if ( !isInteger(a) || !isInteger(b) || !isInteger(c) )
+    	if ( !isInteger(a) || 
+    			!isInteger(b) || 
+    			!isInteger(c) )
     	   return "los tres valores a ingresar deben ser números enteros";
     	else if ( (Integer.valueOf(a) + Integer.valueOf(b)) <= Integer.valueOf(c) || 
     			  (Integer.valueOf(a) + Integer.valueOf(c)) <= Integer.valueOf(b) || 
